@@ -1,0 +1,1 @@
+console.log('Testando o jeito correto de fazer um script');
