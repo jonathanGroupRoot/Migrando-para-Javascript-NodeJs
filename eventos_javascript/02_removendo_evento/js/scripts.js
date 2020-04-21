@@ -36,12 +36,13 @@ let removerAlerta = addEventListener('click', function()
     cons.removeEventListener('click',msg3)
 });
 
-let buscaCor = document.getElementById('#calor');
-buscaCor = addEventListener('click', function()
+let buscaCor = document.getElementById('calor');
+buscaCor = addEventListener('click', function(event)
 {   
     let calor = document.getElementById('calor2');
     calor.style.color = 'red';
     calor.style.fontSize = '50px';
+    event.stopPropagation();
 });
 
 
